@@ -295,7 +295,10 @@
     "log_brewersfriend_stream_apikey": "API Key:",
     "log_brewersfriend_beer": "Beer:",
     "log_brewersfriend_gravity_unit": "Gravity Unit",
-
+	
+	"log_omglora_devid": "Device ID:",
+	"log_omglora_beer": "Beer:",
+    
     "__setup_html": "setup.html",
     "setup_page_title": "BrewPiLess setup!",
     "setup_device_list": "Device List",

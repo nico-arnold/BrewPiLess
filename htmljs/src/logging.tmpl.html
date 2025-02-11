@@ -139,6 +139,7 @@
                             <option value="ubidots"> ubidots.com </option>
                             <option value="brewfather"> Brewfather </option>
                             <option value="brewersfriend"> Brewer'sFriend </option>
+							<option value="lora"> OpenMQTTGateway-LoRa </option>
                         </select>
                     </div>
 
@@ -442,6 +443,36 @@
                                 <span id="fmthint">0/256</span>
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div id=lora class=service-options>
+                        <div layout horizontal cross-center>
+                            <h6 class="inline-header">
+                                <%= log_omglora_devid %>
+                            </h6>
+                            <input type="text" id="omglora-devid" size="42">
+                        </div>
+                        <div layout horizontal cross-center>
+                            <h6 class="inline-header">
+                                <%= log_omglora_beer  %>
+                            </h6>
+                            <input type="text" id="omglora-beer" size="42">
+                        </div>
+
+                        <div layout horizontal cross-center>
+                            <h6 class="inline-header">
+                                <%= log_brewersfriend_gravity_unit %>
+                            </h6>
+
+                            <div class="md-radio md-radio-inline">
+                                <input id="gu-sg" type="radio" name="BF-gu" value="gu-sg" checked>
+                                <label for="gu-sg">SG(1.x)</label>
+                            </div>
+                            <div class="md-radio md-radio-inline">
+                                <input id="gu-plato" type="radio" name="BF-gu" value="gu-plato">
+                                <label for="gu-plato">Plato(&deg;P)</label>
                             </div>
                         </div>
                     </div>
