@@ -298,6 +298,14 @@
 	
 	"log_omglora_devid": "Device ID:",
 	"log_omglora_beer": "Beer:",
+	"log_omglora_freq": "Frequency:",
+	"log_omglora_bandwidth": "Bandwidth:",
+	"log_omglora_txpower": "TX Power:",
+	"log_omglora_sf": "Spreading factor:",
+	"log_omglora_cr": "Coding rate:",
+	"log_omglora_preamble_len": "Preamble length:",
+	"log_omglora_syncword": "Preamble length:",
+	
     
     "__setup_html": "setup.html",
     "setup_page_title": "BrewPiLess setup!",
