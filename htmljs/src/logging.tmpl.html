@@ -461,20 +461,74 @@
                             <input type="text" id="omglora-beer" size="42">
                         </div>
 
-                        <div layout horizontal cross-center>
-                            <h6 class="inline-header">
-                                <%= log_brewersfriend_gravity_unit %>
-                            </h6>
-
-                            <div class="md-radio md-radio-inline">
-                                <input id="gu-sg" type="radio" name="BF-gu" value="gu-sg" checked>
-                                <label for="gu-sg">SG(1.x)</label>
-                            </div>
-                            <div class="md-radio md-radio-inline">
-                                <input id="gu-plato" type="radio" name="BF-gu" value="gu-plato">
-                                <label for="gu-plato">Plato(&deg;P)</label>
-                            </div>
-                        </div>
+                        <select name="log_omglora_freq" class="nb">
+							<option value="430">430 MHz</option>
+							<option value="868">868 MHz</option>
+							<option value="915">915 MHz</option>
+						</select>
+						
+						<select name="log_omglora_txpower" class="nb">
+							<option value="2">2 dB</option>
+							<option value="3">3 dB</option>
+							<option value="4">4 dB</option>
+							<option value="5">5 dB</option>
+							<option value="6">6 dB</option>
+							<option value="7">7 dB</option>
+							<option value="8">8 dB</option>
+							<option value="9">9 dB</option>
+							<option value="10">10 dB</option>
+							<option value="11">11 dB</option>
+							<option value="12">12 dB</option>
+							<option value="13">13 dB</option>
+							<option value="14">14 dB</option>
+							<option value="15">15 dB</option>
+							<option value="16">16 dB</option>
+							<option value="17">17 dB</option>
+						</select>
+						
+						<select name="log_omglora_sf" class="nb">
+							<option value="6">SF6</option>
+							<option value="7">SF7</option>
+							<option value="8">SF8</option>
+							<option value="9">SF9</option>
+							<option value="10">SF10</option>
+							<option value="11">SF11</option>
+							<option value="12">SF12</option>
+						</select>
+						
+						<select name="log_omglora_bw" class="nb">
+							<option value="0">125 kHz</option>
+							<option value="1">250 kHz</option>
+							<option value="2">500 kHz</option>
+						</select>
+						
+						<select name="log_omglora_cr" class="nb">
+							<option value="5">4/5</option>
+							<option value="6">4/6</option>
+							<option value="7">4/7</option>
+							<option value="8">4/8</option>
+						</select>
+						
+						<h6 class="inline-header">
+							Preamble Length
+						</h6>
+						<input type="text" id="omglora-preamble-len" size="4">
+						
+						<h6 class="inline-header">
+							Sync word
+						</h6>
+						<input type="text" id="omglora-syncword" size="2">
+						
+						<div>
+							<input type="checkbox" id="log_omglora_cr" name="log_omglora_cr" class="switch-input" checked>
+							<label for="log_omglora_cr" class="switch-label" style="min-width: 0;">CRC</label>
+						</div>
+						
+						<div>
+							<input type="checkbox" id="log_omglora_inv_iq" name="log_omglora_inv_iq" class="switch-input" checked>
+							<label for="log_omglora_inv_iq" class="switch-label" style="min-width: 0;">Invert IQ</label>
+						</div>
+						
                     </div>
                 </div>
                 <div class="card-footer">
